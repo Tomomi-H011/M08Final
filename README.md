@@ -83,6 +83,8 @@ Examples to enter:
 
 ### References used:
 Johnson, T. (2024, Jun 2). Useful tips for logging in Python. Medium. https://medium.com/@tyrel.j.johnson/useful-tips-for-logging-in-python-c2c945358b5e
+
 Python.(n.d.) Argparse Tutorial. https://docs.python.org/3/howto/argparse.html
+
 Python. (n.d.) logging — Logging facility for Python. https://docs.python.org/3/library/logging.html
 

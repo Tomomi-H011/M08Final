@@ -1,21 +1,19 @@
 # App name: Secret Scanner
 
-A Python-based CLI tool that recursively scans files and directories for hardcoded secrets such as API keys, passwords, tokens, and private keys using regular expressions.
+This app is a Python-based CLI tool that scans files and directories for hardcoded secrets such as API keys, passwords, tokens, and private keys using regular expressions.
 
 ## Repository Link:
 https://github.com/Tomomi-H011/M08Final.git
 
+
 ## Demo Video Link:
+https://drive.google.com/file/d/1KGXhOJpwcEDOWTG5stW3uE1U5k8Awcqk/view?usp=sharing
 
-
-
-## How It Works
-
-The scanner reads a file or directory and finds hardcoded secrets by matching against regular expressions list. And the end, it prints file path, line number, pattern name, and the first 30 characters of hardcoded secrets.
 
 ## Requirements
 
 - Python 3.8 or higher
+
 
 ## How to run the app
 
@@ -33,6 +31,8 @@ python secret_scanner.py test_files/config.py
 # To scan an entire directory
 python secret_scanner.py ./test_files
 
+# To display help
+python secret_scanner.py -h
 ```
 
 ### Report Example
@@ -60,7 +60,25 @@ Secret Scanner Results:
 2026-05-07 17:19:05,566 [INFO] File scanned: test_files\config.py
 2026-05-07 17:19:05,567 [INFO] File scanned: test_files\private_key.txt
 
+### Help Example
+python secret_scanner.py -h
+usage: secret_scanner [-h] path
+
+This app scans files or directories for hardcoded secrets.
+
+positional arguments:
+  path        File path or directory path to scan.
+
+options:
+  -h, --help  show this help message and exit
+
+Examples to enter:
+  python secret_scanner.py config.py for a file scan
+  python secret_scanner.py test_files for a directory scan
 
 
-
+### References used:
+Johnson, T. (2024, Jun 2). Useful tips for logging in Python. Medium. https://medium.com/@tyrel.j.johnson/useful-tips-for-logging-in-python-c2c945358b5e
+Python.(n.d.) Argparse Tutorial. https://docs.python.org/3/howto/argparse.html
+Python. (n.d.) logging — Logging facility for Python. https://docs.python.org/3/library/logging.html
 

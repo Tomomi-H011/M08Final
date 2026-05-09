@@ -55,9 +55,13 @@ Secret Scanner Results:
 
 ### Log Example
 2026-05-07 17:19:05,565 [INFO] Directory scanned: test_files
+
 2026-05-07 17:19:05,565 [INFO] File scanned: test_files\.env
+
 2026-05-07 17:19:05,566 [INFO] File scanned: test_files\app.js
+
 2026-05-07 17:19:05,566 [INFO] File scanned: test_files\config.py
+
 2026-05-07 17:19:05,567 [INFO] File scanned: test_files\private_key.txt
 
 ### Help Example
